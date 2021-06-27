@@ -28,9 +28,10 @@ public class LocalizacaoController {
 
 	@GetMapping
 	public Flux<Localizacao> listAll() {
+		System.out.println("passei");
 		return localizacaoService.findAll();
 	}
-
+	
 	@GetMapping("{id}")
 	public Mono<Localizacao> findById(@PathVariable Long id) {
 		return localizacaoService.findById(id);

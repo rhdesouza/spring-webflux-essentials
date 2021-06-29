@@ -1,5 +1,6 @@
 package exemplo.webflux.domain;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.data.annotation.Id;
@@ -17,6 +18,7 @@ import lombok.With;
 @Builder
 @With
 @Table("localizacao")
+@Entity
 public class Localizacao {
 
 	@Id
